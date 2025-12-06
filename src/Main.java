@@ -20,7 +20,11 @@ public class Main {
         javaCourse.title = "Java for beginner";
         javaCourse.price = 1000000;
         javaCourse.showCourse();
-
+        System.out.println("Processing payment...");
+        payment coursePayment = new payment();
+        coursePayment.amount = javaCourse.price;
+        coursePayment.processPayment();
+        
         Assessment finalExam = new Assessment();
         finalExam.examId = "CK1";
         finalExam.type = "KT Cuoi Ky";
