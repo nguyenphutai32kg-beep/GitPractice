@@ -10,7 +10,8 @@ public class Main {
 
         user student = new user();
         student.id = "SV001";
-        student.name = "Nguyen Van A";
+        student.name = "Nguyễn Phú Tài";
+        System.out.println("Dang xu ly du lieu cho sinh vien: " + student.name);
         student.role = "Student";
         student.login();
 
